@@ -31,6 +31,13 @@
                     <h1>Nucamp</h1>
                     <h2>a better way to camp</h2>
                 </div>
+                <div class="col-md-4 col-xl-2 mt-4">
+                    <button class="btn btn-info">
+                        <nav>
+                            <a class="text-white text-decoration-none" href="#reservationForm">Reserve Campsite</a>
+                        </nav>
+                    </button>
+                </div>
             </div>
         </div>
     </header>
@@ -72,7 +79,8 @@
                     <img class="me-3 img-thumbnail" src="img/breadcrumb-trail-thumb.jpg" alt="Breadcrumb Trail" />
                     <div class="align-self-center">
                         <h3>Our Campsites</h3>
-                        <p class="d-none d-sm-block">Explore our growing database of curated campsites and leave your own reviews!</p>
+                        <p class="d-none d-sm-block">Explore our growing database of curated campsites and leave your
+                            own reviews!</p>
                     </div>
                 </div>
             </div>
@@ -84,34 +92,22 @@
             <div class="col-sm-4 col-md-3 align-self-center">
                 <h2>Featured Campsites</h2>
             </div>
-
             <div class="col">
-                <div class="d-flex">
+                <div class="d-flex align-self-center">
                     <div class="align-self-center">
-                    <h3>React Lake Campground</h3>
-                    <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the
-                        shores of the pristine React
-                        Lake is a favorite for fly fishers.</p>
+                        <h3>React Lake Campground</h3>
+                        <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground
+                            on the
+                            shores of the pristine React
+                            Lake is a favorite for fly fishers.</p>
                     </div>
-                    <img class="me-3 img-thumbnail" src="img/react-lake-thumb.jpg" alt="React Lake" />
+                    <img class="ms-3 img-thumbnail" src="img/react-lake-thumb.jpg" alt="React Lake" />
                 </div>
             </div>
 
-           <!-- <div class="col">
-                <div class="d-flex">
-                    <div class="align-self-center">
-                    <h3>React Lake Campground</h3>
-                    <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the
-                        shores of the pristine React
-                        Lake is a favorite for fly fishers.</p>
-                    </div>
-                    <img class="me-3 img-thumbnail" src="img/react-lake-thumb.jpg" alt="React Lake" />
-                </div>
-            </div> -->
 
 
-            
-            </section>
+        </section>
 
         <!-- partner section -->
         <section class="row row-content align-item-center">
@@ -124,11 +120,57 @@
                     <img class="me-3 img-thumbnail" src="img/bootstrap-thumb.png" alt="Bootstrap Outfitters" />
                     <div class="align-self-center">
                         <h3>Bootstrap Outfitters</h3>
-                        <p class="d-none d-sm-block">Bootstrap Outfitters supplies you with gear you need at prices you can't beat.</p>
+                        <p class="d-none d-sm-block">Bootstrap Outfitters supplies you with gear you need at prices you
+                            can't beat.</p>
                     </div>
                 </div>
             </div>
 
+        </section>
+
+        <!--Reservation Form-->
+        <section class="row row-content align-item-center" id="reservationForm">
+            <div class="mx-auto col-sm-6">
+                <div class="card">
+                    <h3 class="card-header bg-info text-white">Reserve a Campsite</h3>
+                    <div class="card-body">
+                        <form>
+                            <!--Number of People-->
+                            <div class="row mb-3">
+                                <div class="col-sm-6">
+                                    <label class="col-form-label" for="numberOfPeople">Number of Campers</label>
+                                </div>
+                                <div class="col-sm-6">
+                                    <select class="form-control" name="numberOfPeople" id="numberOfPeople">
+                                        <option value="Select...">Select...</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!--Date picker-->
+                            <div class="row mb-3">
+                                <div class="col-sm-6">
+                                    <label class="col-form-label" for="date">Date</label>
+                                </div>
+                                <div class="col col-sm-6">
+                                    <input class="form-control" type="date" id="date" name="date">
+                                </div>
+                            </div>
+                            <!--Search Button-->
+                             <div class="row mb-3">
+                                <div class="col">
+                                    <button type="submit" class="btn btn-primary">Search</button>
+                                 </div>
+                            </div>
+                        </form>
+                    </div>                  
+                </div>
+            </div>
         </section>
 
     </main>
